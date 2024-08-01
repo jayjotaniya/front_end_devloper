@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+    blockquote {
+        text-align: center;
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <blockquote cite="https://en.wikipedia.org/wiki/JavaScript">
+        Web browsers have a dedicated JavaScript engine that executes the client code.
+        These engines are also utilized in some servers and a variety of apps. The most
+        popular runtime system for non-browser usage is Node.js.
+    </blockquote>
+
+    <p>
+        Web browsers have a dedicated JavaScript engine that executes the client code.
+        These engines are also utilized in some servers and a variety of apps. The most
+        popular runtime system for non-browser usage is Node.js.
+    </p>
+
+    <!-- figcaption -->
+
+    <figcaption>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, magni delectus
+        aliquid quos earum cum quae ipsam deserunt aperiam error eaque esse, tempora eum
+        similique a rerum porro consequuntur. Sapiente?
+    </figcaption>
+    <figcaption>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, magni delectus
+        aliquid quos earum cum quae ipsam deserunt aperiam error eaque esse, tempora eum
+        similique a rerum porro consequuntur. Sapiente?
+    </figcaption>
+
+    <!-- figure tag -->
+    <figure>
+        <img src="322px-Mona_Lisa.jpg" alt="">
+        <figcaption>Artist:-Leonardo da Vinci</figcaption>
+    </figure>
+
+    <!-- Img Tag -->
+
+    <img src="pixels.jpg" alt="image from pixels">
+    <a href="https://www.pexels.com/">
+        <img src="pixels.jpg" alt="">
+    </a>
+
+    <!-- Html Table Tag -->
+
+    <table bgcolor="green" border="1" cellpadding="10px" cellspacing="10px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jayesh</td>
+                <td>UI/UX</td>
+                <td>50</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Rakesh</td>
+                <td>FD</td>
+                <td>25</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- rowspan/colspan -->
+
+    <table bgcolor="green" border="1" cellpadding="10px" cellspacing="10px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jayesh</td>
+                <td rowspan="2">UI/UX</td>
+                <td>50</td>
+                <td rowspan="2">Male</td>
+            </tr>
+            <tr>
+                <td>Rakesh</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- colgroup -->
+
+    <table bgcolor="green" border="1" cellpadding="10px" cellspacing="10px">
+        <colgroup>
+            <col span="1" bgcolor="blue">
+            <col span="1" bgcolor="yellow">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jayesh</td>
+                <td rowspan="2">UI/UX</td>
+                <td>50</td>
+                <td rowspan="2">Male</td>
+            </tr>
+            <tr>
+                <td>Rakesh</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
