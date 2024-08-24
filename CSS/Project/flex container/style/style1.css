@@ -1,0 +1,60 @@
+ /* Css flex container properties */
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    margin: 0;
+ }
+
+ .textcenter{
+    text-align: center;
+}
+
+ h1 {
+    color: #f7027442;
+    font-size: 28px;
+}  
+
+ .maindiv{
+    /* height: 800px; */
+     flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; 
+     justify-content: flex-start; 
+    /* justify-content: flex-end;  */
+     /* justify-content: center;  */
+    /* justify-content: space-between;  */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+     /* align-items: center;
+     align-items: flex-start;
+     align-items: flex-end; */
+}
+
+.div-1{
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: white;
+ }
+
+  
+  .maindiv div:nth-child(1){
+    background-color: black;      
+}
+.maindiv div:nth-child(2){
+    background-color: blue;      
+}
+.maindiv div:nth-child(3){
+    background-color: blueviolet;      
+}
+.maindiv div:nth-child(4){
+    background-color:peru;      
+}
+.maindiv div:nth-child(5){
+    background-color: palevioletred;      
+} 
+.maindiv div:nth-child(6){
+    background-color:antiquewhite;      
+} 
