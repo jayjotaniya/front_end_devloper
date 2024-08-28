@@ -1,0 +1,48 @@
+/* Css position properties */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* position static */
+
+
+/* .static-1{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    border: 2px solid black;
+    position: static;
+}
+
+.static-2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border: 2px solid black;
+    position: static;
+} */
+
+
+/* position- fixed */
+
+/* .static-1{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    border: 2px solid black;
+    position: static;
+} */
+
+.static-2{
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    border: 2px solid black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    top: 200px;
+}
