@@ -1,0 +1,69 @@
+/* Css backgraund properties  */
+
+/* .maindiv{
+    height: 600px;
+    width:600px ;
+    background-color:gray ;
+    position: relative;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    margin: 235px;
+}
+
+.box-1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+} */
+
+/* .back-color{
+    height:200px ;
+    width:200px ;
+    background-color: crimson;
+} */
+
+.back-img {
+    background-image: url(../asset/images/pexels-hugo.jpg);
+    background-repeat: no-repeat;
+    /*background-repeat: repeat-y; */
+   /*background-repeat: repeat-x; */
+    /* background-repeat: round; /
+    /background-repeat: space; "/
+    background-size: cover;
+    * background-size: contain; */
+    /*background-position: top right; */
+    height: 700px;
+    max-width: 1500px;
+    border: 50px solid transparent;
+    padding: 100px;
+    /*background-clip: border-box;
+    /background-clip:padding-box;
+    /background-clip:content-box;
+    /background-origin: border-box; */
+    /*
+    background-origin: padding-box; */
+    /*background-origin: content-box; */
+    rgb(2, 0, 36);
+    background: background: radial-gradient
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 28, 0.6755077030812324) 31%,
+    rgba(0, 255, 252, 1) 77%
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 28, 0.6755077030812324) 31%,
+    );
+    rgba(0, 255, 252, 1) 77%
+    }
+
+    https://cssgradient.io/
