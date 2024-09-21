@@ -1,0 +1,37 @@
+$h1:300px;
+$w1:300px;
+$bg1:green;
+$bg2: red;
+$bg3: blue;
+
+
+.box{
+    width: $w1;
+    height: $h1;
+    // background-color: $bg1;
+    // animation-name: change;
+    // animation-duration: 5s;
+    // animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+    // animation-delay: 2s;
+}
+
+.anime {
+    animation-name: change;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes change {
+    0% {
+        color: $bg2;
+    }
+    50% {
+        color: $bg3;
+    }
+    100% {
+        color: $bg1;
+    }
+}
