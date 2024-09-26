@@ -3,17 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
-    font-family: "Montserrat", sans-serif;
 }
 
-header{
+header {
     background-image: url(../asset/images/asset19.jpeg);
     background-size: cover;
     height: 700px;
-}
-
-.mainHeader {
-    display: flex;
 }
 
 header .mainHeader .navigation {
@@ -27,27 +22,71 @@ header .mainHeader .navigation {
     top: 0;
     z-index: 5;
     background-color: #fff;
-    color: #000; 
+    color: #000;
     box-shadow: 1px 0px 8px gray;
 }
-header .social-icons{
-    /* display: flex; */
-    align-items: center;
-    display: block;
-    margin: 0 auto;
 
+header .mainHeader .navigation .logoHeader img {
+    display: none;
 }
 
-header .mainHeader .navigation .logo i {
-    font-size: 18px;
+#toggleBar {
     margin-top: 15px;
+    margin-right: 6px;
     padding: 18px 24px;
+    display: inline-block;
+    font-size: 23px;
+    text-align: left;
 }
 
-header .mainHeader .navigation .navbar .navlist {
-    /* border: 2px solid brown; */
+header .mainHeader .navigation .header-social-icons .header-icons ul {
+    margin-bottom: 25px;
+}
+
+header .mainHeader .navigation .header-social-icons .header-icons ul li {
+    list-style-type: none;
+    /* padding: 5px 10px; */
+}
+
+header .mainHeader .navigation .header-social-icons .header-icons ul li a {
+    display: block;
+    text-decoration: none;
+    height: 42px;
+    width: 42px;
+    margin: 0px auto;
+    font-size: 18px;
+    text-align: center;
+    line-height: 42px;
+    color: #202020;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#header-facebook-icon:hover {
+    background-color: #4267b2;
+    color: #ffffff;
+}
+
+#header-twitter-icon:hover {
+    background-color: #00a7e6;
+    color: #ffffff;
+}
+
+#header-linkedin-icon:hover{
+    background-color: #1682ab;
+    color: #ffffff;
+}
+
+#header-instagram-icon:hover {
+    background-color: #C32AA3;
+    color: #ffffff;
+}
+
+
+/* header .mainHeader .navigation .navbar .navlist {
+    border: 2px solid brown;
     padding-left: 35px;
-    /* padding-top: 120px; */
+    padding-top: 120px;
     text-align: left;    
 }
 
@@ -60,6 +99,7 @@ header .mainHeader .navigation .navbar .navlist li {
 header .mainHeader .navigation .navbar .navlist li a {
     color: #202020;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 600;
 }
@@ -73,7 +113,7 @@ header .mainHeader .navigation .copyright p {
 
 header .mainHeader .navigation .copyright p span {
     white-space: nowrap;
-}
+} */
 
 .hero-section {
     display: flex;
@@ -91,6 +131,7 @@ header .mainHeader .navigation .copyright p span {
     padding-inline: 14px;
     position: relative;
     top: 45px;
+    text-align: center;
 }
 
 .hero-section .hero-line p {
@@ -134,8 +175,10 @@ header .mainHeader .navigation .copyright p span {
 /* Do Section CSS */
 
 .container .about {
-    padding-top: 120px;
+    padding: 120px 0;
     text-align: center;
+    letter-spacing: 0.5px;
+    color: #6b6b6b;
 }
 
 .container .about .quote {
@@ -143,6 +186,7 @@ header .mainHeader .navigation .copyright p span {
     font-size: 18px;
     letter-spacing: 0.5px;
     line-height: 25px;
+    color: #202020;
 }
 
 .container .about .do-title {
@@ -168,10 +212,9 @@ header .mainHeader .navigation .copyright p span {
 
 .container .about .do-section {
     margin-top: 65px;
-    /* border: 2px solid coral; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -239,7 +282,7 @@ header .mainHeader .navigation .copyright p span {
 
 .experienceSection {
     background-color: #6c30eb;
-    margin-top: 150px;
+    /* margin-top: 50px; */
     padding: 120px 0;
 }
 
@@ -256,8 +299,8 @@ header .mainHeader .navigation .copyright p span {
 } 
 
 .experienceSection .container .experience .experience-numbers {
-    width: 50%;
-} 
+    width: 50%; 
+}
 
 .experienceSection .container .experience .experience-info h3 {
     font-size: 30px;
@@ -267,6 +310,7 @@ header .mainHeader .navigation .copyright p span {
     font-weight: normal;
     line-height: 45px;
     letter-spacing: 0.5px;
+    display: inline-block;
 }
 
 .experienceSection .container .experience .experience-info span {
@@ -285,10 +329,12 @@ header .mainHeader .navigation .copyright p span {
     letter-spacing: 0.5px;
     line-height: 25.6px;
     font-weight: normal;
+    display: inline-block;
 }
 
 .experienceSection .container .experience .experience-numbers .numberCard {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -324,7 +370,6 @@ header .mainHeader .navigation .copyright p span {
     display: grid;
     grid-template-columns: repeat(2, auto);
     position: relative;
-    background-color: violet;
 }
 
 .portfolio .items .item-1 {
@@ -337,9 +382,11 @@ header .mainHeader .navigation .copyright p span {
     grid-row-end: 3;
 }
 
-.portfolio .items .item-2 .img , .portfolio .items .item-3 .img{
+.portfolio .items .item-2 .img,
+.portfolio .items .item-3 .img {
     height: 100%;
 }
+
 
 .portfolio .items .item-4 {
     display: grid;
@@ -405,9 +452,7 @@ header .mainHeader .navigation .copyright p span {
 }
 
 .pricing-section .container .pricing-packages {
-    margin-top: 50px;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
@@ -417,7 +462,8 @@ header .mainHeader .navigation .copyright p span {
 
 .pricing-section .container .padding {
     flex-basis: 320px;
-    padding-block: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .pricing-section .container .pricing-packages .package1 {
@@ -454,15 +500,17 @@ header .mainHeader .navigation .copyright p span {
     font-weight: normal;
 }
 
-.pricing-section .container .pricing-packages sup {
+.pricing-section .container .pricing-packages .price sup {
     font-size: 24px;
-    margin-right: 10px;
+    padding-right: 10px;
     vertical-align: middle;
+    font-weight: normal;
 }
 
-.pricing-section .container .pricing-packages sub {
+.pricing-section .container .pricing-packages .price sub {
     font-size: 15px;
     vertical-align: baseline;
+    font-weight: 300;
 }
 
 .pricing-section .container .pricing-packages .price {
@@ -470,11 +518,8 @@ header .mainHeader .navigation .copyright p span {
     font-size: 62px;
     letter-spacing: 0.5px;
     line-height: 25px;
-    padding: 30px 0; 
-}
-
-.pricing-section .container .pricing-packages ul li {
-    list-style-type: none;
+    padding: 30px 0;
+    font-weight: bold;
 }
 
 .pricing-section .container .pricing-packages .benefits {
@@ -482,9 +527,13 @@ header .mainHeader .navigation .copyright p span {
 }
 
 .pricing-section .container .pricing-packages .benefits li {
+    list-style-type: none;
     font-size: 16px;
     letter-spacing: 0.5px;
     padding: 5px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
 }
 
 .pricing-section .container .pricing-packages a {
@@ -505,22 +554,22 @@ header .mainHeader .navigation .copyright p span {
 }
 
 .pricing-section .map iframe {
+    width: 100%;
     padding: 0 15px;
     opacity: 0.8;
 }
+
 /* Pricing Section CSS End */
 
 /* Contact Us Section CSS Start */
 
 .contactUs {
-    border: 2px solid blue;
     padding-bottom: 120px;
 }
 
 .contactUs .container .formInfo {
     padding: 0 15px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -531,7 +580,6 @@ header .mainHeader .navigation .copyright p span {
 
 .contactUs .container .formInfo .form {
     padding: 0 15px;
-    flex-basis: 550px;
 }
 
 .contactUs .container .formInfo .contact-heading {
@@ -571,13 +619,6 @@ textarea:focus {
     color: #202020;
 }
 
-.contactUs .container .formInfo .form form textarea {
-    padding: 13px;
-    padding-left: 25px;
-    font-size: 16px;
-    color: #8799a3
-}
-
 .contactUs .container .formInfo .form form div .form-control {
     padding: 20px;
     margin-bottom: 20px;
@@ -588,9 +629,12 @@ textarea:focus {
 }
 
 .contactUs .container .formInfo .form form div textarea {
-    /* border: 2px solid transparent; */
     border-radius: 0;
     margin-bottom: 20px;
+    padding: 13px;
+    padding-left: 25px;
+    font-size: 16px;
+    color: #8799a3
 }
 
 .contactUs .container .formInfo .form form div a {
@@ -614,7 +658,6 @@ textarea:focus {
 }
 
 .contactUs .container .formInfo .contact-info {
-    flex-basis: 410px;
     padding: 0 15px;
 }
 
